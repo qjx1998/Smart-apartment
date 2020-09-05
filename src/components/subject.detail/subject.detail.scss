@@ -1,0 +1,83 @@
+
+.avatar {
+    width: 210px;
+    height: 295px;
+}
+
+.avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 210px;
+    height: 295px;
+    line-height: 295px;
+    text-align: center;
+}
+
+.split {
+    padding-left: 14px !important;
+    margin-left: 14px;
+    border-left: 1px dashed #989898;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 70px;
+
+    .img {
+        width: 210px;
+        height: 295px;
+
+        .no-img {
+            height: 100%;
+            line-height: 293px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .avatar {
+            width: 210px;
+            height: 295px;
+            border-radius: 8px;
+        }
+    }
+
+    .input {
+        flex: 1;
+        height: 100%;
+        padding-left: 30px;
+
+        .input-form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .el-form-item {
+                width: 302px;
+            }
+
+            .blank {
+                width: 300px;
+            }
+        }
+    }
+}
+
+// reset element ui css
+.el-date-editor {
+    width: inherit;
+}
+
+/deep/ .el-input__inner {
+    border: none !important
+}
+
+/deep/ .el-input.is-disabled .el-input__inner {
+    color: #232323;
+    cursor: default;
+}
+
+/deep/ .el-input__suffix{
+    display: none;
+}

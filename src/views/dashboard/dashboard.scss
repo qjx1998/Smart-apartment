@@ -1,0 +1,114 @@
+// 整个容器
+.dashboard {
+    padding: 0 20px;
+    color: #17264d;
+}
+
+.building-name {
+    font-weight: bold;
+}
+
+//头部
+.header {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #17264d;
+
+    //下拉选择楼栋
+    .dropdown {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+}
+
+// 首行
+.top,
+.middle,
+.bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle,
+.bottom {
+    margin-top: 30px;
+}
+
+//每个图标模块通用的样式
+.chart-c {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px #d0cfd0, -1px -1px 6px #d0cfd0;
+    overflow: hidden;
+}
+
+.top,
+.middle,
+.bottom {
+    .chart-c {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+// 首行
+.top {
+    height: 300px;
+
+    .sm-chart {
+        width: 433px;
+        min-width: 392px;
+        height: 100%;
+    }
+
+    .bg-chart {
+        width: 890px;
+        min-width: 814px;
+        height: 100%;
+    }
+}
+
+// 中间
+.middle {
+    height: 220px;
+
+    .chart-c {
+        width: 433px;
+        min-width: 392px;
+    }
+}
+
+.bottom {
+    height: 256px;
+
+    .chart-c {
+        width: 890px;
+        min-width: 814px;
+        height: 100%;
+    }
+}
+
+.title-ar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    .title {
+        padding-left: 10px;
+    }
+
+    .dash {
+        margin-left: 10px;
+        flex: 1;
+        height: 1px;
+        border-top: 1px dashed #d2d2d2;
+    }
+}

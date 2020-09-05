@@ -1,0 +1,17 @@
+// 图表通用样式
+
+.chart {
+    min-width: 244px;
+    min-height: 244px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+
+    &-item {
+        width: 50%;
+        text-align: center;
+    }
+}

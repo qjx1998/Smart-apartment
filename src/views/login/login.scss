@@ -1,0 +1,161 @@
+// 设计图宽度
+$designWidth: 1920;
+// 头部背景颜色
+$headerColor: #f7f7f7;
+// 主色调
+$mainColor: #0996d9;
+
+// 设计图尺寸转化为vw尺寸
+@function pxToVw($px) {
+    @return $px / $designWidth * 100vw;
+}
+
+
+.login-container {
+    width: 100%;
+    height: 100%;
+
+    .header {
+        width: 100%;
+        height: pxToVw(38);
+        display: flex;
+        align-items: center;
+        background-color: $headerColor;
+
+        .logo {
+            width: pxToVw(96);
+            height: pxToVw(24);
+            margin-left: 4vw;
+        }
+    }
+
+    .login {
+        width: 100%;
+        height: pxToVw(915);
+        position: relative;
+        background-image: url("../../assets/images/login-background.jpg");
+        background-size: 100% 100%;
+
+        .login-form {
+            width: pxToVw(408);
+            height: pxToVw(430);
+            position: absolute;
+            top: pxToVw(190);
+            right: pxToVw(478);
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 8px 8px 0 rgba(0, 0, 0, .05);
+            padding: pxToVw(45) pxToVw(40);
+
+            .title-container {
+                width: 100%;
+                margin-bottom: pxToVw(40);
+
+                .title {
+                    margin: 0;
+                    text-align: center;
+                    color: $mainColor;
+                    font-size: pxToVw(26);
+                }
+            }
+
+            .remember {
+                display: flex;
+                flex-direction: row-reverse;
+                height: 42px;
+                align-items: center;
+                font-size: pxToVw(16);
+            }
+
+            .el-button {
+                margin-bottom: 10px !important;
+                width: pxToVw(325);
+                height: pxToVw(50);
+                font-size: pxToVw(18);
+                padding: pxToVw(12) pxToVw(20);
+            }
+
+            .tips {
+                text-align: center;
+            }
+        }
+    }
+
+    //底部背景色
+    $footerBackground: #f2f2f2;
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: pxToVw(75);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-size: pxToVw(16);
+        color: #fff;
+    }
+
+    .version {
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+
+    //重置element ui样式
+    .el-form-item {
+        margin-bottom: pxToVw(30);
+        height: pxToVw(50)
+    }
+
+    .el-form-item__content {
+        display: flex;
+        border: 1px solid #989898;
+        border-radius: 4px;
+        height: pxToVw(50);
+        line-height: pxToVw(50);
+
+        .svg-container {
+            //margin:
+            margin-left: 15px;
+            color: #888;
+        }
+
+        .show-pwd {
+            position: absolute;
+            right: 15px;
+            //margin-right: 15px;
+        }
+
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+
+    .el-input {
+        width: auto;
+
+        .el-input__inner {
+            display: block !important;
+            height: 100% !important;
+            border: none !important;
+        }
+    }
+}
+
+// 表单自动完成样式修改
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #000;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

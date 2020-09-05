@@ -1,0 +1,11 @@
+/deep/ .el-form-item {
+    display: inline-block;
+
+    &__content {
+        width: 200px;
+    }
+}
+
+/deep/ .el-input__inner {
+    width: 200px;
+}

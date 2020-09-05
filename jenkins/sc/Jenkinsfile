@@ -1,0 +1,21 @@
+pipeline {
+    agent none
+    stages {
+        stage('Build') {
+            agent {
+                docker {
+                    image 'node'
+                }
+            }
+            steps {
+                sh 'sh jenkins/sc/scripts/build.sh'
+            }
+        }
+         stage('Deliver') {
+            agent any
+            steps {
+                sh 'sh jenkins/sc/scripts/deliver.sh'
+            }
+        }
+    }
+}

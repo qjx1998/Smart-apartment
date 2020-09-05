@@ -1,0 +1,13 @@
+.data-item {
+    &:last-child {
+        margin-top: 24px;
+    }
+}
+
+.data {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 32px;
+}

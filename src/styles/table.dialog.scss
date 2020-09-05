@@ -1,0 +1,48 @@
+// 该样式表为数据展示会话框共同样式
+
+// 包含容齐设置左右padding，padding一般取值30px
+/deep/ .el-dialog__body {
+    padding: 0 30px;
+}
+
+// 头部搜索过滤栏样式，按钮区域定宽，靠右。条件区域取剩余长度，靠左。垂直居中
+.filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 88px;
+
+    // 条件区域，横向排列，从左至右，垂直居中
+    .conditions {
+        flex: 1;
+
+        // el-form-item横向排列
+        .el-form {
+            display: flex;
+            flex-direction: row;
+            height: inherit;
+            align-items: center;
+
+            .el-input__inner {
+                width: 108px;
+            }
+        }
+    }
+
+    // 搜索按钮栏，垂直居中，定宽为240px
+    .search {
+        width: 240px;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+// 分页器
+.pagination {
+    height: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}

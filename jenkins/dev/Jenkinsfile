@@ -1,0 +1,25 @@
+pipeline {
+    agent none
+    stages {
+        stage('Build') {
+            agent {
+                docker {
+                    image 'node'
+                }
+            }
+            steps {
+                sh 'sh jenkins/dev/scripts/build.sh'
+            }
+        }
+         stage('Deliver') {
+            agent {
+                docker {
+                    image 'pwbdod/docker-compose-aws-tf'
+                }
+            }
+            steps {
+                sh 'sh jenkins/dev/scripts/deliver.sh'
+            }
+        }
+    }
+}

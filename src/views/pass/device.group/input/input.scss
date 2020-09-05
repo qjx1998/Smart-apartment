@@ -1,0 +1,18 @@
+/deep/ .el-form {
+    width: 380px;
+
+    .el-form-item {
+        width: 380px;
+
+        .el-input__inner {
+            width: 260px;
+        }
+    }
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+

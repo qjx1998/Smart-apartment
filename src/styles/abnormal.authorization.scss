@@ -1,0 +1,17 @@
+// set abnormal state style
+.abnormal {
+    position: absolute;
+    top: 1px;
+    bottom: 1px;
+    left: 1px;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2ea1f5;
+    cursor: pointer;
+}
+
+.dialog__download {
+    color: #409EFF;
+}

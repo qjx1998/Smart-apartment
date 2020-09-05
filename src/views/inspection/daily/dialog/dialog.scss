@@ -1,0 +1,14 @@
+.header {
+  height: 46px;
+
+  .export-btn {
+    float: right;
+  }
+}
+
+//分页样式
+.pagination {
+  padding-top: 34px;
+  display: flex;
+  flex-direction: row-reverse;
+}

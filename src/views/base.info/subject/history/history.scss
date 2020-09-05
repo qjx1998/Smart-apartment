@@ -1,0 +1,18 @@
+.capture-img {
+  width: 72px;
+  height: 72px;
+}
+
+.operations {
+  height: 80px!important;
+}
+
+/deep/ .el-date-editor {
+  width: 100%;
+}
+
+.pagination {
+  padding-top: 34px;
+  display: flex;
+  flex-direction: row-reverse;
+}

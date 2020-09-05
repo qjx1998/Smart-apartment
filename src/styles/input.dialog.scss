@@ -1,0 +1,24 @@
+.el-dialog__body {
+    width: 790px;
+}
+
+// 设置输入框宽度
+/deep/ .el-input__inner {
+    width: 246px;
+}
+
+// 清楚el-form-item的样式
+.el-form-item:first-child {
+    width: auto!important;
+}
+
+/deep/ .el-form-item__content {
+    width: 246px;
+}
+
+// 设置表单
+/deep/ .el-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

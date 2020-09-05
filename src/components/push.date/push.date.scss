@@ -1,0 +1,58 @@
+/deep/ .el-dialog__header {
+    display: none;
+}
+
+/deep/ .el-dialog__body {
+    padding: 0 20px;
+}
+
+.tab {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.tab-item {
+    line-height: 18px;
+    border-radius: 9px;
+    border: 1px solid #9da0a7;
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.month,
+.week,
+.day-tab {
+    height: 148px;
+    border: 1px dashed;
+    border-radius: 8px;
+}
+
+.month,
+.week {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.week {
+    align-items: center;
+}
+
+.day {
+    width: 40px;
+    line-height: 18px;
+    margin: 8px 4px;
+    text-align: center;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.selected {
+    color: #fff;
+    background-color: #00a4ff;
+    border-color: #00a4ff;
+}

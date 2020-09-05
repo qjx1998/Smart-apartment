@@ -1,0 +1,39 @@
+.chart-container {
+    position: relative;
+}
+
+.chart {
+    height: 170px;
+    min-width: 170px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.data {
+    display: flex;
+    height: 170px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 54px;
+}
+
+.data-item:last-child {
+    margin-top: 24px;
+}
+
+.circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.blue {
+    background-color: #00a4ff;
+}
+
+.orange {
+    background-color: #ff6060;
+}

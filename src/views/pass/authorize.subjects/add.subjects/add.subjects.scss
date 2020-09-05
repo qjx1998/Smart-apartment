@@ -1,0 +1,22 @@
+/deep/ .container {
+    padding: 0;
+}
+
+/deep/ .el-dialog {
+    background-color: #f0f0f0;
+}
+
+// 隐藏横向滚动条
+/deep/ .el-scrollbar__wrap {
+    overflow-x: hidden;
+}
+
+// 设置会话框的滚动高度
+.scrollbar {
+    height: calc(85vh - 60px);
+    width: 100%;
+}
+
+/deep/ .el-dialog__body {
+    padding-top: 0;
+}

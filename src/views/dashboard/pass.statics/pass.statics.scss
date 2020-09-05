@@ -1,0 +1,20 @@
+.data-item {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .total-title {
+        font-size: 16px;
+        line-height: 26px;
+        margin-left: 30px;
+        color: #a2adc7;
+    }
+
+    .total-number {
+        font-size: 26px;
+        margin-right: 28px;
+        color: #838383;
+    }
+}

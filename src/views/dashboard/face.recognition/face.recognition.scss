@@ -1,0 +1,42 @@
+.rank {
+    margin-top: 20px;
+}
+.rank-item {
+    position: relative;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    margin-left: 74px;
+    width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.times {
+    margin-right: 60px;
+}
+
+.no-data {
+    text-align: center;
+}
+
+/deep/ .el-progress {
+    position: absolute;
+    width: 440px;
+    left: 274px;
+
+    .el-progress__text {
+        display: none;
+    }
+
+    .el-progress-bar {
+        padding-right: 26px;
+    }
+}

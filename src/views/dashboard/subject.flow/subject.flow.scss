@@ -1,0 +1,45 @@
+
+.all,
+.subject-flow-chart {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .data {
+        margin-bottom: 20px;
+    }
+}
+
+
+// 标题
+.legend {
+    font-size: 24px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+
+    &-item {
+        width: calc(100% / 3);
+    }
+}
+
+.chart {
+    width: 100%;
+
+    min-width: 244px;
+    min-height: 244px;
+}
+
+.title {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.total-title {
+    text-align: center;
+}

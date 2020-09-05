@@ -1,0 +1,24 @@
+$mainColor: #409eff;
+
+// 导入弹出框样式
+.el-dialog {
+  .uploader {
+    color: $mainColor;
+    margin-bottom: 20px;
+
+    /deep/ .el-upload {
+      width: 100%;
+
+      .el-upload-dragger {
+        width: auto;
+      }
+      .upload-area {
+        line-height: 180px;
+      }
+    }
+  }
+}
+
+/deep/ .dialog__download {
+  color: $mainColor;
+}
